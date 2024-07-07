@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SortingAlgorithm.testGraph">
+   <children>
+      <Button fx:id="sort" layoutX="11.0" layoutY="349.0" mnemonicParsing="false" onAction="#showGraph" prefHeight="38.0" prefWidth="95.0" text="Draw Graph" />
+      <LineChart fx:id="graph" layoutX="186.0" layoutY="14.0" prefHeight="354.0" prefWidth="400.0" title="Graph">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <CheckBox fx:id="insertion" layoutX="29.0" layoutY="36.0" mnemonicParsing="false" text="Insertion Sort" />
+      <CheckBox fx:id="heap" layoutX="29.0" layoutY="60.0" mnemonicParsing="false" text="Heap Sort" />
+      <CheckBox fx:id="counting" layoutX="29.0" layoutY="84.0" mnemonicParsing="false" text="Counting Sort" />
+      <CheckBox fx:id="radix" layoutX="29.0" layoutY="107.0" mnemonicParsing="false" text="Radix Sort" />
+      <CheckBox fx:id="merge" layoutX="29.0" layoutY="131.0" mnemonicParsing="false" text="Merge Sort" />
+      <CheckBox fx:id="quick" layoutX="29.0" layoutY="155.0" mnemonicParsing="false" text="Quick Sort" />
+      <CheckBox fx:id="NSquare" layoutX="29.0" layoutY="179.0" mnemonicParsing="false" text="NSquare" />
+      <CheckBox fx:id="NLogN" layoutX="29.0" layoutY="202.0" mnemonicParsing="false" text="NLogN" />
+      <TextField fx:id="InputNo" layoutX="36.0" layoutY="297.0" onAction="#event2" />
+      <Label fx:id="label1" layoutX="55.0" layoutY="278.0" text="Number Of Elements" />
+      <Button layoutX="118.0" layoutY="349.0" mnemonicParsing="false" onAction="#event2" prefHeight="38.0" prefWidth="95.0" text="Generate file" />
+      <CheckBox fx:id="kplusn" layoutX="29.0" layoutY="13.0" mnemonicParsing="false" text="k+n" />
+      <CheckBox fx:id="dkplusdn" layoutX="29.0" layoutY="247.0" mnemonicParsing="false" text="d*k+d*n" />
+      <CheckBox fx:id="bubble" layoutX="29.0" layoutY="225.0" mnemonicParsing="false" text="Bubble Sort" />
+   </children>
+</AnchorPane>
